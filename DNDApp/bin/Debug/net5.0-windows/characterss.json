@@ -1,0 +1,392 @@
+[
+  {
+    "Biography": {
+      "Age": "24",
+      "Height": "1.50m",
+      "Weight": "...",
+      "EyeColor": "...",
+      "SkinColor": "...",
+      "HairColor": "...",
+      "PersonalityTraits": "...",
+      "Ideals": "...",
+      "Bonds": "...",
+      "Flaws": "...",
+      "Backstory": "...",
+      "Name": "Nilam Nariko",
+      "Nickname": "(Lucky) Seven"
+    },
+    "Alignment": 3,
+    "Pronouns": "He / Him",
+    "PlayerName": "António",
+    "Class": {
+      "Level": 0,
+      "RolledHP": null,
+      "ClassInfo": null
+    },
+    "Stats": {
+      "Strength": {
+        "SType": 0,
+        "BaseValue": 10,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 0,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Dexterity": {
+        "SType": 1,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 1,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 2,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 3,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Constitution": {
+        "SType": 2,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Intelligence": {
+        "SType": 3,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 4,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 5,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 6,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 7,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 8,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Wisdom": {
+        "SType": 4,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 9,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 10,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 11,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 12,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 13,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Charisma": {
+        "SType": 5,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 14,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 15,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 16,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 17,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Biography": {
+      "Age": "25",
+      "Height": "1.93m",
+      "Weight": "...",
+      "EyeColor": "...",
+      "SkinColor": "...",
+      "HairColor": "...",
+      "PersonalityTraits": "...",
+      "Ideals": "...",
+      "Bonds": "...",
+      "Flaws": "...",
+      "Backstory": "...",
+      "Name": "Kazuki",
+      "Nickname": "Kiki"
+    },
+    "Alignment": 3,
+    "Pronouns": "He / Him",
+    "PlayerName": "...",
+    "Class": {
+      "Level": 0,
+      "RolledHP": null,
+      "ClassInfo": null
+    },
+    "Stats": {
+      "Strength": {
+        "SType": 0,
+        "BaseValue": 20,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 0,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Dexterity": {
+        "SType": 1,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 1,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 2,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 3,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Constitution": {
+        "SType": 2,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Intelligence": {
+        "SType": 3,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 4,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 5,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 6,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 7,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 8,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Wisdom": {
+        "SType": 4,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 9,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 10,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 11,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 12,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 13,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      },
+      "Charisma": {
+        "SType": 5,
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "SkillList": [
+          {
+            "SkillType": 18,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 14,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 15,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 16,
+            "Proficiency": 0,
+            "Modifier": 0
+          },
+          {
+            "SkillType": 17,
+            "Proficiency": 0,
+            "Modifier": 0
+          }
+        ]
+      }
+    }
+  }
+]

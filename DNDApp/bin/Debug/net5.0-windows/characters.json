@@ -1,0 +1,442 @@
+[
+  {
+    "Biography": {
+      "Age": "25",
+      "Height": "...",
+      "Weight": "...",
+      "EyeColor": "...",
+      "SkinColor": "...",
+      "HairColor": "...",
+      "PersonalityTraits": "...",
+      "Ideals": "...",
+      "Bonds": "...",
+      "Flaws": "...",
+      "Backstory": "...",
+      "Name": "Dee Fault",
+      "Nickname": "D"
+    },
+    "Alignment": 4,
+    "Pronouns": "...",
+    "PlayerName": "...",
+    "Class": {
+      "Level": 1,
+      "RolledHP": [
+        10
+      ],
+      "ClassInfo": null
+    },
+    "CurrentLevel": 1,
+    "MaxLevel": 0,
+    "ProficiencyBonus": 2,
+    "Stats": {
+      "Strength": {
+        "Athletics": {
+          "SkillType": 0,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 0,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 20,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Dexterity": {
+        "Acrobatics": {
+          "SkillType": 1,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SleightOfHand": {
+          "SkillType": 2,
+          "Proficiency": 2,
+          "Modifier": -1,
+          "ProficiencyBonus": 2
+        },
+        "Stealth": {
+          "SkillType": 3,
+          "Proficiency": 1,
+          "Modifier": -3,
+          "ProficiencyBonus": 2
+        },
+        "SType": 1,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Constitution": {
+        "SType": 2,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Intelligence": {
+        "Arcana": {
+          "SkillType": 4,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "History": {
+          "SkillType": 5,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Investigation": {
+          "SkillType": 6,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Nature": {
+          "SkillType": 7,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Religion": {
+          "SkillType": 8,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 3,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Wisdom": {
+        "AnimalHandling": {
+          "SkillType": 9,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Insight": {
+          "SkillType": 10,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Medicine": {
+          "SkillType": 11,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Perception": {
+          "SkillType": 12,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Survival": {
+          "SkillType": 13,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 4,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Charisma": {
+        "Deception": {
+          "SkillType": 14,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Intimidation": {
+          "SkillType": 15,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Performance": {
+          "SkillType": 16,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Persuasion": {
+          "SkillType": 17,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 5,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      }
+    },
+    "MaxHP": 10,
+    "CurrentHP": 9
+  },
+  {
+    "Biography": {
+      "Age": "100",
+      "Height": "...",
+      "Weight": "...",
+      "EyeColor": "...",
+      "SkinColor": "...",
+      "HairColor": "...",
+      "PersonalityTraits": "...",
+      "Ideals": "...",
+      "Bonds": "...",
+      "Flaws": "...",
+      "Backstory": "...",
+      "Name": "Dee Fault",
+      "Nickname": "D"
+    },
+    "Alignment": 4,
+    "Pronouns": "...",
+    "PlayerName": "...",
+    "Class": {
+      "Level": 1,
+      "RolledHP": [
+        10
+      ],
+      "ClassInfo": null
+    },
+    "CurrentLevel": 1,
+    "MaxLevel": 0,
+    "ProficiencyBonus": 2,
+    "Stats": {
+      "Strength": {
+        "Athletics": {
+          "SkillType": 0,
+          "Proficiency": 1,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 0,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 16,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Dexterity": {
+        "Acrobatics": {
+          "SkillType": 1,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SleightOfHand": {
+          "SkillType": 2,
+          "Proficiency": 2,
+          "Modifier": -1,
+          "ProficiencyBonus": 2
+        },
+        "Stealth": {
+          "SkillType": 3,
+          "Proficiency": 1,
+          "Modifier": -3,
+          "ProficiencyBonus": 2
+        },
+        "SType": 1,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 15,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Constitution": {
+        "SType": 2,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Intelligence": {
+        "Arcana": {
+          "SkillType": 4,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "History": {
+          "SkillType": 5,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Investigation": {
+          "SkillType": 6,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Nature": {
+          "SkillType": 7,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Religion": {
+          "SkillType": 8,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 3,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Wisdom": {
+        "AnimalHandling": {
+          "SkillType": 9,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Insight": {
+          "SkillType": 10,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Medicine": {
+          "SkillType": 11,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Perception": {
+          "SkillType": 12,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Survival": {
+          "SkillType": 13,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 4,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      },
+      "Charisma": {
+        "Deception": {
+          "SkillType": 14,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Intimidation": {
+          "SkillType": 15,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Performance": {
+          "SkillType": 16,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "Persuasion": {
+          "SkillType": 17,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "SType": 5,
+        "SavingThrow": {
+          "SkillType": 18,
+          "Proficiency": 0,
+          "Modifier": -5,
+          "ProficiencyBonus": 2
+        },
+        "BaseValue": 0,
+        "TotalValue": 0,
+        "Modifier": -5,
+        "ProficiencyModifier": 2
+      }
+    },
+    "MaxHP": 10,
+    "CurrentHP": 9
+  }
+]

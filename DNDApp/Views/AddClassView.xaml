@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="DNDApp.Views.AddClassView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DNDApp"
+             xmlns:viewModel = "clr-namespace:DNDApp.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <UserControl.Resources>
+        <Style x:Key="titleTextStyle">
+            <Setter Property="Label.FontSize" Value="15" />
+            <Setter Property="TextBlock.Foreground" Value="IndianRed"/>
+        </Style>
+
+        <Style x:Key="classNameTextStyle">
+            <Setter Property="TextBlock.FontSize" Value="20" />
+            <Setter Property="TextBlock.Foreground" Value="CadetBlue"/>
+            <Setter Property="TextBlock.Margin" Value="0,5,0,5"/>
+        </Style>
+
+        <DataTemplate x:Key="characterClassFeatureItemTemplate" DataType="{x:Type local:DNDClassFeature}">
+            <StackPanel>
+                <TextBlock Text="{Binding Feature.Name}" Style="{StaticResource titleTextStyle}"/>
+                <TextBlock Text="{Binding Level, StringFormat=Level Learned: {0}}" />
+                <TextBlock Text="{Binding Feature.Entry}" TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <ComboBox Grid.Row="0" ItemsSource="{Binding ClassInfos}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedClassInfo}" SelectedIndex="0"/>
+            <ComboBox Grid.Row="1" ItemsSource="{Binding SelectedClassInfo.SubClasses}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedSubClassInfo}" SelectedIndex="0"/>
+        </Grid>
+
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Command="{Binding AddClassToCharacterCommand}">Add Class</Button>
+            <Button Grid.Row="1" Command="{Binding ShowCharacterInfoCommand}">Cancel</Button>
+        </Grid>
+
+        <StackPanel>
+            <TextBlock Text="{Binding SelectedClassInfo.Name}" Style="{StaticResource classNameTextStyle}"/>
+            <TextBlock Text="{Binding SelectedClassInfo.HitDice, StringFormat=Hit Dice: {0}}"/>
+            <TextBlock Text="{Binding SelectedClassInfo.HitDice.MaxDiceRoll, StringFormat=Hit Points at 1st Level: {0} + your Constitution Modifier}"/>
+            <!--<TextBlock Text="{Binding SelectedClassInfo.HitDice.AverageDiceRoll, StringFormat=Hit Points at Higher Levels: {0} + your Constitution modifier per Paladin level after 1st}"/>-->
+            <TextBlock>
+                <TextBlock.Text>
+                    <MultiBinding  StringFormat="Hit Points at Higher Levels: {0} (or {1}) + your Constitution modifier per {2} level after 1st">
+                        <Binding Path="SelectedClassInfo.HitDice"/>
+                        <Binding Path="SelectedClassInfo.HitDice.AverageDiceRoll"/>
+                        <Binding Path="SelectedClassInfo.Name"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+            <ScrollViewer MaxHeight="510">
+                <ItemsControl ItemsSource="{Binding SelectedClassInfo.ClassFeatures}"
+                          ItemTemplate="{StaticResource characterClassFeatureItemTemplate}"/>
+            </ScrollViewer>
+        </StackPanel>
+    </DockPanel>
+</UserControl>
