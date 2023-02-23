@@ -23,7 +23,13 @@
             <StackPanel>
                 <TextBlock Text="{Binding Feature.Name}" Style="{StaticResource titleTextStyle}"/>
                 <TextBlock Text="{Binding Level, StringFormat=Level Learned: {0}}" />
-                <TextBlock Text="{Binding Feature.Entry}" TextWrapping="Wrap"/>
+                <ItemsControl ItemsSource="{Binding Feature.Entry}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
         </DataTemplate>
     </UserControl.Resources>

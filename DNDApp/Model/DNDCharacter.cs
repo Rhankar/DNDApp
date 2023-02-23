@@ -200,6 +200,25 @@ namespace DNDApp
             }
         }
 
+        private ObservableCollection<DNDAction> _battleActions;
+        public ObservableCollection<DNDAction> BattleActions
+        {
+            get
+            {
+                if (ReferenceEquals(null, _battleActions))
+                {
+                    _battleActions = new ObservableCollection<DNDAction>();
+                }
+
+                return _battleActions;
+            }
+            set
+            {
+                _battleActions = value;
+                OnPropertyChanged(nameof(BattleActions));
+            }
+        }
+
         private DNDRace _race;
         public DNDRace Race
         {
@@ -252,58 +271,24 @@ namespace DNDApp
 
             BuildDummyRace();
 
+            //remove me
+            DNDAction action = new DNDAction();
+            action.ActionType = ActionType.Action;
+            action.Name = "Action A";
+            action.Description = "Description A";
+            BattleActions.Add(action);
+            action = new DNDAction();
+            action.ActionType = ActionType.Action;
+            action.Name = "Action B";
+            action.Description = "Description B";
+            BattleActions.Add(action);
+
+
             CurrentHP = characterToCopy.CurrentHP;
             ChangeProficiency();
 
             BuildDummyInventory();
         }
-
-        //private void BuildDummyClasses()
-        //{
-        //    DNDClassInfo classInfo = new DNDClassInfo();
-        //    classInfo.Name = "Paladin";
-        //    classInfo.ClassFeatures = new List<DNDClassFeature>();
-        //    DNDClassFeature feature = new DNDClassFeature();
-        //    DNDFeature f = new DNDFeature();
-        //    f.Name = "ABC";
-        //    feature.Level = 1;
-        //    f.Entry = "BLABLABLABLABLABLABLABLABLABLABLABLA1";
-        //    feature.Feature = f;
-        //    classInfo.ClassFeatures.Add(feature);
-        //    feature = new DNDClassFeature();
-        //    f = new DNDFeature();
-        //    f.Name = "DEF";
-        //    feature.Level = 2;
-        //    f.Entry = "BLABLABLABLABLABLABLABLABLABLABLABLA2";
-        //    feature.Feature = f;
-        //    classInfo.ClassFeatures.Add(feature);
-        //    DNDClasses.Add(new DNDClass(classInfo));
-
-        //    classInfo = new DNDClassInfo();
-        //    classInfo.Name = "Monk";
-        //    classInfo.ClassFeatures = new List<DNDClassFeature>();
-        //    feature = new DNDClassFeature();
-        //    f = new DNDFeature();
-        //    f.Name = "ABC";
-        //    feature.Level = 1;
-        //    f.Entry = "BLABLABLABLABLABLABLABLABLABLABLABLA1";
-        //    feature.Feature = f;
-        //    classInfo.ClassFeatures.Add(feature);
-        //    feature = new DNDClassFeature();
-        //    f = new DNDFeature();
-        //    f.Name = "DEF";
-        //    feature.Level = 2;
-        //    f.Entry = "BLABLABLABLABLABLABLABLABLABLABLABLA2";
-        //    feature.Feature = f;
-        //    classInfo.ClassFeatures.Add(feature);
-        //    DNDClasses.Add(new DNDClass(classInfo));
-
-        //    foreach (DNDClass c in DNDClasses)
-        //    {
-        //        c.OnLevelChange += ClassChangedLevel;
-        //        c.IncreaseLevel(1);
-        //    }
-        //}
 
         #region CLASS METHODS
         public bool AddClass(DNDClassInfo classInfo)
@@ -467,6 +452,18 @@ namespace DNDApp
         public void RemoveSavingThrowProficiency(StatType stat)
         {
             Stats.RemoveSavingThrowProficiency(stat);
+        }
+        #endregion
+
+        #region ACTION METHODS
+        public void AddAction(DNDAction action)
+        {
+            BattleActions.Add(action);
+        }
+
+        public void RemoveAction(DNDAction action)
+        {
+            BattleActions.Remove(action);
         }
         #endregion
 

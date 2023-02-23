@@ -64,7 +64,13 @@
             <StackPanel>
                 <TextBlock Text="{Binding Feature.Name}" Style="{StaticResource titleTextStyle}"/>
                 <TextBlock Text="{Binding Level, StringFormat=Level Learned: {0}}" />
-                <TextBlock Text="{Binding Feature.Entry}" TextWrapping="Wrap"/>
+                <ItemsControl ItemsSource="{Binding Feature.Entry}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
         </DataTemplate>
 
@@ -813,6 +819,18 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
+            <TabItem Header="Battle Actions">
+                <ItemsControl ItemsSource="{Binding CurrentCharacter.BattleActions}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate DataType="{x:Type local:DNDAction}">
+                            <StackPanel>
+                                <TextBlock Text="{Binding Name}"/>
+                                <TextBlock Text="{Binding Description}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </TabItem>
             <TabItem Header="Race/Background">
                 <StackPanel>
                     <TextBlock Text="{Binding CurrentCharacter.Race.Name}" Style="{StaticResource classNameTextStyle}"/>
@@ -821,62 +839,41 @@
                                   ItemsSource="{Binding CurrentCharacter.Race.ScoreIncreases}">
                     </ItemsControl>
                     
-                    <ItemsControl ItemsSource="{Binding CurrentCharacter.Race.RaceInfo.Features}"
+                    <!--<ItemsControl ItemsSource="{Binding CurrentCharacter.Race.RaceInfo.Features}"
                           ItemTemplate="{StaticResource characterRaceFeatureItemTemplate}"
                           HorizontalContentAlignment="Stretch"
-                          x:Name="CharacterClassesListVie"/>
+                          x:Name="CharacterClassesListVie"/>-->
                     <ItemsControl ItemsSource="{Binding CurrentCharacter.Race.RaceInfo.Features}"
                                   HorizontalContentAlignment="Stretch">
                         <ItemsControl.Resources>
                             <DataTemplate DataType="{x:Type local:DNDTogglableFeature}">
                                 <StackPanel>
                                     <TextBlock Text="{Binding Name}" Style="{StaticResource titleTextStyle}"/>
-                                    <TextBlock Text="{Binding Entry}" />
+                                    <ItemsControl ItemsSource="{Binding Entry}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
                                     <CheckBox IsChecked="{Binding Toggled}"/>
                                 </StackPanel>
                             </DataTemplate>
                             <DataTemplate DataType="{x:Type local:DNDFeature}">
                                 <StackPanel>
                                     <TextBlock Text="{Binding Name}" Style="{StaticResource titleTextStyle}"/>
-                                    <TextBlock Text="{Binding Entry}" />
+                                    <ItemsControl ItemsSource="{Binding Entry}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
                                 </StackPanel>
                             </DataTemplate>
-                            
+
                         </ItemsControl.Resources>
                     </ItemsControl>
-
-                    <!--<ComboBox ItemsSource="{Binding Source={local:EnumBindingSource {x:Type local:StatType}}}"/>-->
-
-                    <!--<Label>Ability Score Options</Label>
-                    <ComboBox>
-                        <ComboBoxItem IsSelected="True">+2 / +1</ComboBoxItem>
-                        <ComboBoxItem>+1 / +1 / +1</ComboBoxItem>
-                    </ComboBox>
-
-                    <Grid Visibility="Collapsed">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <Label>1</Label>
-                        <Label Grid.Row="1">2</Label>
-                    </Grid>
-
-                    <Grid Visibility="Collapsed">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <Label>1</Label>
-                        <Label Grid.Row="1">2</Label>
-                        <Label Grid.Row="2">3</Label>
-                    </Grid>-->
-                    
-                    <!--<RadioButton>+2 / +1</RadioButton>
-                    <RadioButton>+1 / +1 / +1</RadioButton>-->
                 </StackPanel>
             </TabItem>
             <TabItem Header="Biography" Height="16" VerticalAlignment="Top">
@@ -1057,7 +1054,7 @@
             </TabItem>
 
             <TabItem Header="Equipment">
-                
+
             </TabItem>
         </TabControl>
     </Grid>

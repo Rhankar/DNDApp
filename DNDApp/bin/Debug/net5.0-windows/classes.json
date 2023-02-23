@@ -11,81 +11,23 @@
                 "Level": 1,
                 "Feature": {
                     "Name": "Unarmored Defense",
-                    "Entry": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
+                    "Entry": ["Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."]
                 }
-            }, {
+            }, 
+			{
+                "Level": 1,
+                "Feature": {
+                    "Name": "Martial Arts",
+                    "Entry": ["Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property."]
+                }
+            },
+			{
                 "Level": 2,
                 "Feature": {
                     "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
+                    "Entry": ["Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."]
                 }
-            }, {
-                "Level": 3,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 4,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 5,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 6,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 7,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 8,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 9,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 10,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 11,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 12,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }, {
-                "Level": 13,
-                "Feature": {
-                    "Name": "Ki",
-                    "Entry": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table."
-                }
-            }
+            },
         ],
         "SubClasses": [{
                 "Name": "Way of Shadow",
@@ -94,13 +36,13 @@
                         "Level": 3,
                         "Feature": {
                             "Name": "Subclass Feat 1",
-                            "Entry": "Feat 1"
+                            "Entry": ["Feat 1"]
                         }
                     }, {
                         "Level": 7,
                         "Feature": {
                             "Name": "Subclass Feat 2",
-                            "Entry": "Feat 2"
+                            "Entry": ["Feat 2"]
                         }
                     }
                 ]
@@ -111,13 +53,13 @@
                         "Level": 3,
                         "Feature": {
                             "Name": "Subclass Feat 1",
-                            "Entry": "Feat 1"
+                            "Entry": ["Feat 1"]
                         }
                     }, {
                         "Level": 7,
                         "Feature": {
                             "Name": "Subclass Feat 2",
-                            "Entry": "Feat 2"
+                            "Entry": ["Feat 2"]
                         }
                     }
                 ]
@@ -136,13 +78,13 @@
                 "Level": 1,
                 "Feature": {
                     "Name": "Divine Sense",
-                    "Entry": "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell."
+                    "Entry": ["The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell."]
                 }
             }, {
                 "Level": 2,
                 "Feature": {
                     "Name": "Divine Smite",
-                    "Entry": "Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8."
+                    "Entry": ["Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8."]
                 }
             }
         ],
@@ -153,13 +95,13 @@
                         "Level": 3,
                         "Feature": {
                             "Name": "Subclass Feat 1",
-                            "Entry": "Feat 1"
+                            "Entry": ["Feat 1"]
                         }
                     }, {
                         "Level": 7,
                         "Feature": {
                             "Name": "Subclass Feat 2",
-                            "Entry": "Feat 2"
+                            "Entry": ["Feat 2"]
                         }
                     }
                 ]
@@ -170,13 +112,13 @@
                         "Level": 3,
                         "Feature": {
                             "Name": "Subclass Feat 1",
-                            "Entry": "Feat 1"
+                            "Entry": ["Feat 1"]
                         }
                     }, {
                         "Level": 7,
                         "Feature": {
                             "Name": "Subclass Feat 2",
-                            "Entry": "Feat 2"
+                            "Entry": ["Feat 2"]
                         }
                     }
                 ]

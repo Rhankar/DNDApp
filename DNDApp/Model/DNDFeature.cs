@@ -11,10 +11,27 @@ namespace DNDApp
         protected DNDCharacter _owner;
 
         public string Name { get; set; }
-        public string Entry { get; set; }
+        private List<string> _entry;
+        public List<string> Entry
+        {
+            get
+            {
+                if (ReferenceEquals(_entry, null))
+                {
+                    _entry = new List<string>();
+                }
+
+                return _entry;
+            }
+            set
+            {
+                _entry = value;
+            }
+        }
 
         private List<DNDFeatureEffect> _effects;
-        public List<DNDFeatureEffect> Effects { 
+        public List<DNDFeatureEffect> Effects
+        {
             get
             {
                 if (ReferenceEquals(_effects, null))
@@ -67,8 +84,9 @@ namespace DNDApp
     public class DNDTogglableFeature : DNDFeature
     {
         private bool _toggled;
-        public bool Toggled { 
-            get 
+        public bool Toggled
+        {
+            get
             {
                 return _toggled;
             }
@@ -76,7 +94,7 @@ namespace DNDApp
             {
                 if (_toggled == value) return;
 
-                if(value)
+                if (value)
                 {
                     _toggled = value;
                     ApplyFeatures(_owner);
